@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Umbrío</title>
+    <link rel="icon" type="image/png" href="../multimedia/img/calavera.webp" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- Overlay + modal -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDesc"
+    >
+      <div class="modal" role="document">
+        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+
+        <section class="modal-body" id="modalDesc">
+          <div class="contenedor-video" style="cursor: pointer">
+            <video width="100%" autoplay muted controls>
+              <source src="../multimedia/video/mi_video.mp4" type="video/mp4" />
+              Tu navegador no soporta el tag de video.
+            </video>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="scene">
+      <div class="image-container">
+        <img
+          src="../multimedia/img/fondo-1.webp"
+          alt="Una imagen inmersiva"
+          class="inmersive-image"
+        />
+      </div>
+      <div class="inside-content"></div>
+
+      <header>
+        <!--menu principal-->
+        <div class="contenedor">
+          <nav>
+            <!-- Botón del menú con animación de fuego -->
+            <div class="llama-menu">
+              <img
+                src="../multimedia/img/fire.gif"
+                alt="Menu Toggle"
+                class="vela"
+              />
+            </div>
+            <div class="menu">
+              <!-- Opciones para la navegación -->
+              <ul id="mainMenu" class="mainmenu hidden">
+                <img
+                  src="../multimedia/img/vela.png"
+                  class="vela-menu"
+                  alt=""
+                />
+                <li><a href="../../index.html">Home</a></li>
+                <li>
+                  <a href="#" id="openModalBtn" class="enlace-modal"
+                    >Cortometraje</a
+                  >
+                </li>
+                <li><a href="#secc3">Personajes</a></li>
+                <li><a href="./assets/paginas/page2.html">Mas</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <img
+        src="../multimedia/img/fire.gif"
+        class="fuego fuego-1"
+        alt="Llama camino 1"
+      />
+      <img
+        src="../multimedia/img/fire.gif"
+        class="fuego fuego-2"
+        alt="Llama camino 2"
+      />
+      <img
+        src="../multimedia/img/fire.gif"
+        class="fuego fuego-3"
+        alt="Llama camino 3"
+      />
+      <img
+        src="../multimedia/img/fire.gif"
+        class="fuego fuego-4"
+        alt="Llama camino 4"
+      />
+      <img
+        src="../multimedia/img/fire.gif"
+        class="fuego fuego-5"
+        alt="Llama camino 5"
+      />
+      <img
+        src="../multimedia/img/fire.gif"
+        class="fuego fuego-6"
+        alt="Llama camino 6"
+      />
+    </section>
+
+    <img
+      src="../multimedia/img/mano.webp"
+      id="cursor-img"
+      alt="Cursor personalizado"
+      style="display: block"
+    />
+
+    <section id="secc6" class="seccion6">
+      <h1 class="about-title">Equipo Umbrío</h1>
+
+      <div class="carousel-container">
+        <button class="nav-arrow left">&#10094;</button>
+        <div class="carousel-track">
+          <div class="card" data-index="0">
+            <img src="" alt="Ivonne" />
+          </div>
+          <div class="card jhonge" data-index="1">
+            <img
+              src="../multimedia/img/teams/jhonge16.webp"
+              alt="Team Member 2"
+            />
+          </div>
+          <div class="card" data-index="2">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww"
+              alt="Team Member 3"
+            />
+          </div>
+          <div class="card" data-index="3">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww"
+              alt="Team Member 4"
+            />
+          </div>
+          <div class="card" data-index="4">
+            <img
+              src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2Zlc3Npb25hbCUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Team Member 5"
+            />
+          </div>
+          <div class="card" data-index="5">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Team Member 6"
+            />
+          </div>
+          <div class="card" data-index="6">
+            <img src="../multimedia/img/teams/dayana.png" alt="Team Member 6" />
+          </div>
+          <div class="card" data-index="7">
+            <img
+              src="../multimedia/img/teams/Faizule.png"
+              alt="Team Member 6"
+            />
+          </div>
+          <div class="card" data-index="8">
+            <img
+              src="../multimedia/img/teams/jose-alejandro.png"
+              alt="Team Member 6"
+            />
+          </div>
+        </div>
+        <button class="nav-arrow right">&#10095;</button>
+      </div>
+
+      <div class="member-info">
+        <h2 class="member-name">David Kim</h2>
+        <p class="member-role">Founder</p>
+        <a href="#" id="member-portfolio" class="portfolio-link" target="_blank"
+          >Ver Portafolio</a
+        >
+      </div>
+    </section>
+
+    <!--seccion making off-->
+
+    <section id="secc8" class="seccion8 making-of">
+      <div class="contenedor-txt">
+        <h2 class="title-seccion8">Making Off</h2>
+      </div>
+
+      <div class="video-container fade-in delay2">
+       
+        <div class="cursor-overlay"></div>  <iframe
+          width="70%"
+          height="90%"
+          src="https://www.youtube.com/embed/LH18nGoIUKo?si=pkc9TwyPg-FFm37B"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!--game -->
+
+    <section id="secc7" class="seccion7 seccion-game">
+      <h2 class="title-seccion7">Game</h2>
+      <h2 class="invitacion">Disponible ahora, clic para descargar</h2>
+      <div class="store-links">
+        <img src="../multimedia/img/play-.svg" alt="" />
+      </div>
+      <div class="contenedor-video">
+        <div class="pantalla">
+          <video id="video-game-player" muted controls loop>
+            <source src="../multimedia/video/game.mp4" type="video/mp4" />
+
+            Tu navegador no soporta videos.
+          </video>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="primer-contenedor">
+        <div class="redes-logos">
+          <div class="redes-sociales">
+            <a href="https://www.facebook.com/umbrio/" target="_blank"
+              ><img
+                src="../multimedia/icons/social-media/face.svg"
+                alt="facebook"
+            /></a>
+            <a href="https://www.instagram.com/umbrio/" target="_blank"
+              ><img
+                src="../multimedia/icons/social-media/instagram.svg"
+                alt="instagram"
+            /></a>
+            <a href="https://twitter.com/umbrio" target="_blank">
+              <img src="../multimedia/icons/social-media/x.svg" alt="twitter"
+            /></a>
+            <a href="https://youtube.com/umbrio" target="_blank"
+              ><img
+                src="../multimedia/icons/social-media/youtube.svg"
+                alt="youtube"
+            /></a>
+            <a href="https://www.whatsapp.com/umbrio" target="_blank"
+              ><img
+                src="../multimedia/icons/social-media/whas.svg"
+                alt="whatsapp"
+            /></a>
+            <a href="https://tiktok.com/@umbrio" target="_blank"
+              ><img
+                src="../multimedia/icons/social-media/tictok.svg"
+                alt="tiktok"
+            /></a>
+          </div>
+          <div class="logos">
+            <img src="../multimedia/img/logo-sena.webp" alt="sena" />
+            <img src="../multimedia/img/logo.png" alt="logo" />
+          </div>
+        </div>
+
+        <div class="enlaces">
+          <a
+            href="https://comunicaciongraficasena.blogspot.com/"
+            target="_blank"
+          >
+            CENIGRAF
+          </a>
+          <a
+            href="https://actividadfisicaycultura.blogspot.com/"
+            target="_blank"
+          >
+            CEFAFC
+          </a>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright &copy; 2025 Equipo Web-Umbrio | Todos los derechos
+          reservados .
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Ajustar la escala inicial de la imagen a 1.5, como estaba en el CSS original
+      gsap.set(".inmersive-image", { scale: 1.5 });
+
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".scene",
+          start: "top top",
+          end: "+=200%",
+          scrub: true,
+          pin: true,
+        },
+      });
+
+      // Animar la escala y opacidad de la imagen mientras se hace scroll
+      tl.to(".inmersive-image", {
+        scale: 2.5, // Ajusta este valor para controlar el "acercamiento"
+        duration: 1,
+        ease: "power2.out",
+      });
+
+      // Ocultar la imagen y mostrar el contenido interior
+      tl.to(
+        ".inmersive-image",
+        {
+          opacity: 0,
+          duration: 0.5,
+        },
+        "-=0.3"
+      );
+
+      tl.to(
+        ".inside-content",
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "-=0.5"
+      );
+
+      tl.to(
+        ".fuego",
+        {
+          // Usamos la clase .fuego
+          opacity: 1,
+          duration: 0.5,
+          ease: "power1.out",
+        },
+        "-=0.3"
+      );
+      tl.to(
+        ".vela",
+        {
+          opacity: 1,
+          duration: 1,
+          ease: "power1.out",
+        },
+        "-=0.3"
+      );
+    </script>
+    <script>
+      // Unificación del Código del Cursor
+      const cursor = document.getElementById("cursor-img");
+
+      if (cursor) {
+        // 1. Movimiento en PC (mousemove)
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.clientX + "px";
+          cursor.style.top = e.clientY + "px";
+        });
+
+        document.addEventListener("touchmove", (e) => {
+          e.preventDefault();
+
+          const touch = e.touches[0];
+          cursor.style.left = touch.clientX + "px";
+          cursor.style.top = touch.clientY + "px";
+        });
+      }
+    </script>
+  </body>
+</html>

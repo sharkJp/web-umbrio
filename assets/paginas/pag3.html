@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo de Modal</title>
+<style>
+  /* ----------  Contenedor del modal (overlay)  ---------- */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;                     /* 0 0 0 0 */
+    background: rgba(0,0,0,0.6);  /* Fondo semitransparente */
+    display: none;                /* Oculto por defecto */
+    align-items: center;          /* Centra verticalmente */
+    justify-content: center;      /* Centra horizontalmente */
+    z-index: 1000;                /* Asegura que esté encima de todo */
+  }
+  .modal-overlay.active {         /* Se muestra cuando se añade la clase "active" */
+    display: flex;
+  }
+
+  /* ----------  Modal (caja)  ---------- */
+  .modal {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 500px;
+    max-height: 80%;
+    overflow-y: auto;             /* Scroll si el contenido es muy alto */
+    position: relative;           /* Para posicionar el botón × */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* ----------  Botón de cerrar (×)  ---------- */
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .modal-close:focus { outline: 2px solid #005fcc; }
+
+  /* ----------  Contenido del modal  ---------- */
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 1rem;
+  }
+  .modal-header { border-bottom: 1px solid #eaeaea; }
+  .modal-footer { border-top: 1px solid #eaeaea; text-align: right; }
+
+  /* ----------  Animación ---------- */
+  @keyframes fadeIn {
+    from { transform: translateY(-10px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+</style>
+</head>
+
+<body>
+  <!-- Botón que abre el modal -->
+  <button id="openModalBtn">Abrir modal</button>
+
+  <!-- Overlay + modal -->
+  <div class="modal-overlay" id="modalOverlay" aria-modal="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <div class="modal" role="document">
+      <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+      <header class="modal-header">
+        <h2 id="modalTitle">Título del Modal</h2>
+      </header>
+      <section class="modal-body" id="modalDesc">
+        <p>Este es el contenido del modal. Puedes colocar aquí texto, imágenes, formularios, etc.</p>
+      </section>
+      <footer class="modal-footer">
+        <button id="closeModalBtn">Cerrar</button>
+      </footer>
+    </div>
+  </div>
+
+<script>
+  /* ----------  Variables ---------- */
+  const openBtn   = document.getElementById('openModalBtn');
+  const closeBtn  = document.getElementById('closeModalBtn');
+  const closeX    = document.querySelector('.modal-close');
+  const overlay   = document.getElementById('modalOverlay');
+
+  /* ----------  Función para abrir el modal ---------- */
+  function openModal() {
+    overlay.classList.add('active');
+    overlay.setAttribute('aria-hidden', 'false');
+    // Enfocamos el primer elemento interactivo dentro del modal
+    const focusable = overlay.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (focusable) focusable.focus();
+  }
+
+  /* ----------  Función para cerrar el modal ---------- */
+  function closeModal() {
+    overlay.classList.remove('active');
+    overlay.setAttribute('aria-hidden', 'true');
+    openBtn.focus();   // Regresamos el foco al botón de apertura
+  }
+
+  /* ----------  Eventos ---------- */
+  openBtn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  closeX.addEventListener('click', closeModal);
+
+  // Cerrar al hacer click fuera del modal (en el overlay)
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  // Cerrar con la tecla Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      closeModal();
+    }
+  });
+</script>
+</body>
+</html>

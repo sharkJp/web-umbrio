@@ -1,0 +1,216 @@
+
+:root {
+  --primer-color: #021740;
+  --segundo-color: #f2a007;
+  --tercer-color: #05f2f2;
+  --cuarto-color: #0596a6;
+  --quinto-color: #9430bf;
+  --sexto-color: rgb(238, 151, 230);
+  --septimo-color:rgba(147, 30, 231, 0.55);
+  --footer-color: #30163d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url('../multimedia/img/Fondo-1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #170719;
+  cursor: none;
+
+}
+
+#cursor-img {
+  position: fixed;
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  transform: translate(-80%, -10%);
+  z-index: 1000;
+}
+
+.seccion1,
+.seccion2,
+.seccion3,.seccion4,.seccion5,.seccion6, .seccion7 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion1 {
+  flex-direction: column;
+}
+
+.seccion3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-color);
+  width: 100%;
+  height: 40vh;
+}
+
+/* Imagen lenguaje de señas */
+.flotante,
+.flotante2,
+.flotante3 {
+  width: 15%;
+  height: 25%;
+  position: absolute;
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5%;
+  left: 3%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.flotante3 {
+  top: 200% !important;
+}
+
+.flotante video,
+.flotante2 video,
+.flotante3 video {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.cerrar-boton,
+.cerrar-boton2,
+.cerrar-boton3 {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: none !important;
+  width: 10%;
+  height: 10%;
+  border: none;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.flotante .cerrar-boton:hover,
+.flotante2 .cerrar-boton:hover,
+.flotante3 .cerrar-boton:hover {
+  cursor: none;
+}
+
+.flotante .cerrar-boton,
+.flotante2 .cerrar-boton2,
+.flotante3 .cerrar-boton3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flotante .close-icon,
+.flotante2 .close-icon2,
+.flotante3 .close-icon3 {
+  font-size: 0.8rem;
+}
+
+
+/* ...............................................................Botón flotante Calavera */
+
+.flotante-calavera {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 900;
+  display: none;
+  /* oculto por defecto */
+  cursor: none;
+}
+
+.flotante-calavera img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+/* Vibración */
+@keyframes vibrar {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.shake-horizontal {
+  animation: vibrar 0.3s infinite;
+}
+
+
+
+.flotante-calavera.shake-horizontal {
+  animation: vibrar 0.8s;
+}
+
+/* animación de vibración */
+@keyframes vibrar {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

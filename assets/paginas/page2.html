@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/pag2.css" />
+
+  <!-- <link rel="stylesheet" href="../css/secciopn5.css" /> -->
+  <link rel="stylesheet" href="../css/seccion6.css" />
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <style></style>
+</head>
+
+<body>
+  <main>
+    <section id="secc4" class="seccion4">
+      <!-- Contenido del modal -->
+      <dialog id="miModal">
+        <div class="contendor-btn">
+          <button id="cerrarModal" style="cursor: pointer; z-index: 999">
+            ❌
+          </button>
+        </div>
+
+        <div class="contenedor-video" style="cursor: pointer">
+          <video width="80%" autoplay muted controls>
+            <source src="../multimedia/video/mi_video.mp4" type="video/mp4" />
+            Tu navegador no soporta el tag de video.
+          </video>
+        </div>
+      </dialog>
+
+      <!-- <button id="abrirModal">Abrir Modal</button> -->
+
+      <header>
+        <!--menu principal-->
+        <div class="contenedor7">
+          <nav>
+            <!-- Botón del menú con animación de fuego -->
+            <div class="llama-menu">
+              <img src="../multimedia/img/fire.gif" alt="Menu Toggle" class="vela" />
+            </div>
+            <div class="menu">
+              <!-- Opciones para la navegación -->
+              <ul id="mainMenu" class="mainmenu hidden">
+                <img src="../multimedia/img/vela.png" class="vela-menu" alt="" />
+                <li><a href="../../index.html">Home</a></li>
+
+                <li>
+                  <a href="#" id="abrirModal" class="enlace-modal">Cortometraje</a>
+                </li>
+                <li><a href="#secc6">Equipo</a></li>
+                <li><a href="#secc8">Making Off</a></li>
+                <li><a href="#secc7">Video Game</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <img src="../../assets/multimedia/img/mano.webp" id="cursor-img" alt="" />
+    </section>
+    <!--       
+      <section id="secc5" class="seccion5">
+        <div class="titulo">
+          <h1 class="about-title">Equipo Web-Umbrío</h1>
+        </div>
+        <div class="contendor-slider">
+          <div class="carousel-container">
+            <button class="nav-arrow left">&#10094;</button>
+            <div class="carousel-track">
+              <div class="card" data-index="0">
+                <img
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="JhonGe"
+                />
+              </div>
+              <div class="card jhonge" data-index="1">
+                <img
+                  src="../multimedia/img/teams/jhonge16.png"
+                  alt="Team Member 2"
+                />
+              </div>
+              <div class="card" data-index="2">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                  alt="Team Member 3"
+                />
+              </div>
+              <div class="card" data-index="3">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                  alt="Team Member 4"
+                />
+              </div>
+              <div class="card" data-index="4">
+                <img
+                  src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2Zlc3Npb25hbCUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Team Member 5"
+                />
+              </div>
+              <div class="card" data-index="5">
+                <img
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Team Member 6"
+                />
+              </div>
+            </div>
+            <button class="nav-arrow right">&#10095;</button>
+          </div>
+
+          <div class="contenedor-informacion">
+            <h2 class="member-name">David Kim</h2>
+            <p class="member-role">Founder</p>
+          </div>
+        </div>
+      </section> -->
+
+    <section id="secc6" class="seccion6">
+      <h1 class="about-title">Equipo Umbrío</h1>
+
+      <div class="carousel-container">
+        <button class="nav-arrow left">&#10094;</button>
+        <div class="carousel-track">
+          <div class="card" data-index="0">
+            <img
+              src=""
+              alt="Ivonne" />
+          </div>
+          <div class="card jhonge" data-index="1">
+            <img src="../multimedia/img/teams/jhonge16.webp" alt="Team Member 2" />
+          </div>
+          <div class="card" data-index="2">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww"
+              alt="Team Member 3" />
+          </div>
+          <div class="card" data-index="3">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww"
+              alt="Team Member 4" />
+          </div>
+          <div class="card" data-index="4">
+            <img
+              src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2Zlc3Npb25hbCUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Team Member 5" />
+          </div>
+          <div class="card" data-index="5">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Team Member 6" />
+          </div>
+          <div class="card" data-index="6">
+            <img
+              src="../multimedia/img/teams/dayana.png"
+              alt="Team Member 6" />
+          </div>
+          <div class="card" data-index="7">
+            <img
+              src="../multimedia/img/teams/Faizule.png"
+              alt="Team Member 6" />
+          </div>
+          <div class="card" data-index="8">
+            <img
+              src="../multimedia/img/teams/jose-alejandro.png"
+              alt="Team Member 6" />
+          </div>
+        </div>
+        <button class="nav-arrow right">&#10095;</button>
+      </div>
+
+      <div class="member-info">
+        <h2 class="member-name">David Kim</h2>
+        <p class="member-role">Founder</p>
+        <a href="#" id="member-portfolio" class="portfolio-link" target="_blank">Ver Portafolio</a>
+      </div>
+    </section>
+    <section id="secc8" class="seccion8 making-of">
+      <div class="contenedor-txt">
+        <h2 class="title-seccion8">Making Off</h2>
+      </div>
+
+      <div class="video-container fade-in delay2">
+        <video  autoplay muted controls>
+          <source src="../multimedia/video/Detras de las camaras (Making of) - God of War 2018.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+        </video>
+      </div>
+    </section>
+    <section id="secc7" class="seccion7 seccion-game">
+      <h2 class="title-seccion7">Game</h2>
+       <h2 class="invitacion">Disponible ahora, clic para descargar</h2>
+      <div class="store-links">
+       
+        <img src="../multimedia/img/play-.svg" alt="" />
+      </div>
+      <div class="contenedor-video">
+        <div class="pantalla">
+<video id="video-game-player" autoplay muted controls loop>
+          <source src="../multimedia/video/game.mp4" type="video/mp4" />
+
+          Tu navegador no soporta videos.
+        </video>
+
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="primer-contenedor">
+      <div class="redes-logos">
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/umbrio/" target="_blank"><img
+              src="../multimedia/icons/social-media/face.svg" alt="facebook" /></a>
+          <a href="https://www.instagram.com/umbrio/" target="_blank"><img
+              src="../multimedia/icons/social-media/instagram.svg" alt="instagram" /></a>
+          <a href="https://twitter.com/umbrio" target="_blank">
+            <img src="../multimedia/icons/social-media/x.svg" alt="twitter" /></a>
+          <a href="https://youtube.com/umbrio" target="_blank"><img src="../multimedia/icons/social-media/youtube.svg"
+              alt="youtube" /></a>
+          <a href="https://www.whatsapp.com/umbrio" target="_blank"><img src="../multimedia/icons/social-media/whas.svg"
+              alt="whatsapp" /></a>
+          <a href="https://tiktok.com/@umbrio" target="_blank"><img src="../multimedia/icons/social-media/tictok.svg"
+              alt="tiktok" /></a>
+        </div>
+        <div class="logos">
+          <img src="../multimedia/img/logo-sena.webp" alt="sena" />
+          <img src="../multimedia/img/logo.png" alt="logo" />
+        </div>
+      </div>
+
+      <div class="enlaces">
+        <a href="https://comunicaciongraficasena.blogspot.com/" target="_blank">
+          CENIGRAF
+        </a>
+        <a href="https://actividadfisicaycultura.blogspot.com/" target="_blank">
+          CEFAFC
+        </a>
+      </div>
+    </div>
+
+    <div class="copy">
+      <p>
+        Copyright &copy; 2025 Equipo Web-Umbrio | Todos los derechos
+        reservados .
+      </p>
+    </div>
+  </footer>
+  <script src="../js/seccion4.js"></script>
+  <script src="../js/seccion8.js"></script>
+  <script src="../js/pag2.js"></script>
+  <script>
+    const teamMembers = [
+      { name: "Ivonne", role: "Founder" },
+      {
+        name: "Jhon Gerardo",
+        role: "Developer | Web & Software",
+        portfolioURL: "https://sharkjp.github.io/portafolio/",
+      },
+      { name: "Emma Rodriguez", role: "Lead Developer" },
+      { name: "Julia Gimmel", role: "UX Designer" },
+      { name: "Lisa Anderson", role: "Marketing Manager" },
+      { name: "James Wilson", role: "Product Manager" },
+      { name: "Dayana", role: "Frontend Developer" },
+      { name: "Faizule", role: "Frontend Developer" },
+      { name: "Jose Alejandro", role: "Frontend Developer" },
+    ];
+
+    const cards = document.querySelectorAll(".card");
+    const dots = document.querySelectorAll(".dot");
+    const memberName = document.querySelector(".member-name");
+    const memberRole = document.querySelector(".member-role");
+    const memberPortfolioLink = document.getElementById("member-portfolio");
+    const leftArrow = document.querySelector(".nav-arrow.left");
+    const rightArrow = document.querySelector(".nav-arrow.right");
+    let currentIndex = 0;
+    let isAnimating = false;
+
+    function updateCarousel(newIndex) {
+      if (isAnimating) return;
+      isAnimating = true;
+
+      currentIndex = (newIndex + cards.length) % cards.length;
+
+      cards.forEach((card, i) => {
+        const offset = (i - currentIndex + cards.length) % cards.length;
+
+        card.classList.remove(
+          "center",
+          "left-1",
+          "left-2",
+          "right-1",
+          "right-2",
+          "hidden"
+        );
+
+        if (offset === 0) {
+          card.classList.add("center");
+        } else if (offset === 1) {
+          card.classList.add("right-1");
+        } else if (offset === 2) {
+          card.classList.add("right-2");
+        } else if (offset === cards.length - 1) {
+          card.classList.add("left-1");
+        } else if (offset === cards.length - 2) {
+          card.classList.add("left-2");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentIndex);
+      });
+
+      memberName.style.opacity = "0";
+      memberRole.style.opacity = "0";
+
+      memberPortfolioLink.style.opacity = "0";
+
+      setTimeout(() => {
+        const currentMember = teamMembers[currentIndex];
+
+        memberName.textContent = teamMembers[currentIndex].name;
+        memberRole.textContent = teamMembers[currentIndex].role;
+
+        memberPortfolioLink.href = currentMember.portfolioURL;
+        memberName.style.opacity = "1";
+        memberRole.style.opacity = "1";
+        memberPortfolioLink.style.opacity = "1";
+      }, 300);
+
+      setTimeout(() => {
+        isAnimating = false;
+      }, 800);
+    }
+
+    leftArrow.addEventListener("click", () => {
+      updateCarousel(currentIndex - 1);
+    });
+
+    rightArrow.addEventListener("click", () => {
+      updateCarousel(currentIndex + 1);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        updateCarousel(i);
+      });
+    });
+
+    cards.forEach((card, i) => {
+      card.addEventListener("click", () => {
+        updateCarousel(i);
+      });
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        updateCarousel(currentIndex - 1);
+      } else if (e.key === "ArrowRight") {
+        updateCarousel(currentIndex + 1);
+      }
+    });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    document.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          updateCarousel(currentIndex + 1);
+        } else {
+          updateCarousel(currentIndex - 1);
+        }
+      }
+    }
+
+    updateCarousel(0);
+  </script>
+  <script>
+    // Existing cursor code (simplified for clarity)
+    const cursor = document.getElementById("cursor-img");
+    const youtubePlayer = document.getElementById("youtube-player");
+
+    if (cursor) {
+      // --- Custom Cursor Follow Logic (Mouse & Touch) ---
+
+      // Your existing mousemove listener
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+      // Your existing touchmove listener
+      document.addEventListener("touchmove", (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        cursor.style.left = touch.clientX + "px";
+        cursor.style.top = touch.clientY + "px";
+      });
+
+      // --- NEW FIX: Handling the Iframe ---
+      if (youtubePlayer) {
+        // 1. When the mouse ENTERS the video area
+        youtubePlayer.addEventListener("mouseenter", () => {
+          // Hide the custom cursor
+          cursor.style.display = "none";
+          // Restore the default cursor on the whole page, so the mouse pointer returns
+          document.body.style.cursor = "auto";
+        });
+
+        // 2. When the mouse LEAVES the video area
+        youtubePlayer.addEventListener("mouseleave", () => {
+          // Show the custom cursor again
+          cursor.style.display = "block";
+          // Re-hide the default cursor (usually done in CSS, but good to ensure here too)
+          document.body.style.cursor = "none";
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
