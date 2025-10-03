@@ -237,9 +237,11 @@ align-items: center;
 .seccion5{
 	position: relative;
      flex-direction: column;
+     background-color: #25052b;
 }
 .seccion6{
 	flex-direction: column;
+  background-color: #25052b;
 }
 .seccion4,.seccion5,.seccion6, .seccion7 {
   width: 100%;
